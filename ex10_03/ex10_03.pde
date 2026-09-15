@@ -1,0 +1,26 @@
+// 상하좌우로 분산하는 100개의 원
+
+int num = 100;
+float[] x = new float[num];
+float[] y = new float[num];
+float[] velocity_x = new float[num];
+float[] velocity_y = new float[num];
+
+void setup() {
+  size(500, 500);
+  for (int i = 0; i < num; i++) {
+    x[i] = width / 2;
+    y[i] = height / 2;
+    velocity_x[i] = random(-5, 5);
+    velocity_y[i] = random(-5, 5);
+  }
+}
+
+void draw() {
+  background(0);
+  for (int i = 0; i < num; i++) {
+    ellipse(x[i], y[i], 30, 30);
+    x[i] += velocity_x[i];
+    y[i] += velocity_y[i];
+  }
+}

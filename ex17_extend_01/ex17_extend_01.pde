@@ -1,0 +1,18 @@
+String s1 = "Hello Processing";
+String s2 = "Hello Processing";
+String s3 = new String("Hello Processing");
+String s4 = new String("Hello Processing");
+println(s1 == s2);
+println(s2 == s3);
+println(s3 == s4);
+println(s1.equals(s2));
+println(s2.equals(s3));
+println(s3.equals(s4));
+println(s1.hashCode());
+println(s2.hashCode());
+println(s3.hashCode());
+println(s4.hashCode());
+println(System.identityHashCode(s1));
+println(System.identityHashCode(s2));
+println(System.identityHashCode(s3));
+println(System.identityHashCode(s4));

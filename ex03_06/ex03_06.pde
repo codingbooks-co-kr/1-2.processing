@@ -1,0 +1,11 @@
+// 사각형을 대각선 방향으로 이동하며 그리기
+
+float x = 60.0, y = 60.0, d = 70.0;
+
+size(300, 300);
+noFill();
+rectMode(CENTER);
+rect(x, y, d, d);
+rect(x*2, y*2, d, d);
+rect(x*3, y*3, d, d);
+rect(x*4, y*4, d, d);
